@@ -1,7 +1,8 @@
-def searchPrefix(arr,s)
-
+def search_prefix(input_array, s)
+    sorted_array = input_array.select { |word| s == word.strip[0, s.length] }
+    puts sorted_array.join(', ')
 end
 
-print(searchPrefix(["abcde", "abdf", "adeab", "abdgse", "bdefa", "bacdef"],"ab"))
-
-print(searchPrefix(["abcde", "abdf", "adeab", "abdgse", "bdefa", "bacdef"],"b"))
+input_array = gets.chomp.split(',')
+s = "ab"
+search_prefix(input_array, s)
