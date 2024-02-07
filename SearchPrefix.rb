@@ -1,6 +1,7 @@
 def search_prefix(input_array, s)
     sorted_array = input_array.select { |word| s == word.strip[0, s.length] }
-    puts sorted_array.join(', ')
+    puts '["'+sorted_array.join('", "')+'"]'
+
 end
 
 input_string = gets.chomp

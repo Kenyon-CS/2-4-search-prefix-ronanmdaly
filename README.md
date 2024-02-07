@@ -15,8 +15,8 @@ Starts with: ab
 
 ### Input 2
 ```
-["abcde", "abdf", "adeab", "abdgse", "bdefa", "bacdef"]
-Starts with: b
+[["abcde", "abdf", "adeab", "abdgse", "bdefa", "bacdef"]
+]Starts with: b
 ```
 ### Output 2
 ```
