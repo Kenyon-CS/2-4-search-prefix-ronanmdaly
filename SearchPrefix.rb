@@ -3,6 +3,10 @@ def search_prefix(input_array, s)
     puts sorted_array.join(', ')
 end
 
-input_array = gets.chomp.split(',')
-s = "ab"
+input_string = gets.chomp
+input_array = input_string.scan(/[a-zA-Z]+/)
+
+print "Starts with: "
+s = gets.chomp.to_s
+
 search_prefix(input_array, s)
